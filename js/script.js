@@ -11,6 +11,13 @@ const nameSurname = name + ' ' + surname;
 document.getElementById('user').innerHTML = 
 `
 <p>
- Mi chiamo <strong>${nameSurname}</strong> e il mio colore preferito è il <strong>${color}</strong>
+ Mi chiamo <strong>${nameSurname}</strong> e il mio colore preferito è il <strong class='${color}'> ${color}</strong>
+</p>
+`;
+
+document.getElementById('password').innerHTML = 
+`
+<p>
+ La tua Password è: <strong>${name + surname + color}13</strong>
 </p>
 `;
